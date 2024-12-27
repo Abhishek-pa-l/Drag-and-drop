@@ -1,0 +1,76 @@
+<mvc:View
+	controllerName="draganddrop.controller.View1"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:f="sap.f"
+	xmlns:card="sap.f.cards"
+	displayBlock="true"
+	height="100%">
+	<ScrollContainer height="100%" width="100%" vertical="true">
+		<HBox renderType="Bare" width="100%">
+			<VBox class="sapUiSmallMargin" width="33%">
+				<Label text="Section 1" class="sapUiSmallMarginTop sapUiSmallMarginBottom" />
+				<f:GridContainer
+					id="grid1"
+					class="sapUiSmallMargin"
+					width="100%"
+					snapToRow="true"
+					items="{ path: '/grid1' }">
+					<f:layout>
+						<f:GridContainerSettings rowSize="84px" columnSize="84px" gap="8px" />
+					</f:layout>
+					<f:Card>
+						<f:layoutData>
+							<f:GridContainerItemLayoutData minRows="{rows}" columns="{columns}" />
+						</f:layoutData>
+						<f:header>
+							<card:Header title="{title}" />
+						</f:header>
+					</f:Card>
+				</f:GridContainer>
+			</VBox>
+			<VBox class="sapUiSmallMargin" width="33%">
+				<Label text="Section 2" class="sapUiSmallMarginTop sapUiSmallMarginBottom" />
+				<f:GridContainer
+					id="grid2"
+					class="sapUiSmallMargin"
+					width="100%"
+					snapToRow="true"
+					items="{ path: '/grid2' }">
+					<f:layout>
+						<f:GridContainerSettings rowSize="84px" columnSize="84px" gap="8px" />
+					</f:layout>
+					<f:Card>
+						<f:layoutData>
+							<f:GridContainerItemLayoutData minRows="{rows}" columns="{columns}" />
+						</f:layoutData>
+						<f:header>
+							<card:Header title="{title}" />
+						</f:header>
+					</f:Card>
+				</f:GridContainer>
+			</VBox>
+			<VBox class="sapUiSmallMargin" width="33%">
+				<Label text="Section 3" class="sapUiSmallMarginTop sapUiSmallMarginBottom" />
+				<f:GridContainer
+					id="grid3"
+					class="sapUiSmallMargin"
+					width="100%"
+					snapToRow="true"
+					items="{ path: '/grid3' }">
+					<f:layout>
+						<f:GridContainerSettings rowSize="84px" columnSize="84px" gap="8px" />
+					</f:layout>
+					<f:Card>
+						<f:layoutData>
+							<f:GridContainerItemLayoutData minRows="{rows}" columns="{columns}" />
+						</f:layoutData>
+						<f:header>
+							<card:Header title="{title}" />
+						</f:header>
+					</f:Card>
+				</f:GridContainer>
+			</VBox>
+		</HBox>
+	</ScrollContainer>
+</mvc:View>
